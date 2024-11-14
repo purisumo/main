@@ -1,0 +1,52 @@
+name: main
+description: A new Flutter project.
+
+# publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.1+1
+
+environment:
+  sdk: ^3.1.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  english_words: ^4.0.0
+  sqflite: ^2.2.8+4
+  path_provider: ^2.0.15
+  provider: ^6.0.5
+  crypto: ^3.0.2
+  path: ^1.8.3
+  intl: ^0.17.0
+  simple_shadow: ^0.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.0.8
+
+flutter_native_splash:
+  color: "#4dac8c"  # Background color of the splash screen
+  image: assets/462539313_1598653967735318_1078102689429585755_n.png  # Path to the splash screen image (e.g., logo)
+  android: true
+  ios: true
+  fullscreen: true  # Optional: make splash screen full screen
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/
+
+  fonts:
+    - family: Open Sans
+      fonts:
+        - asset: fonts/OpenSans-Regular.ttf
+        - asset: fonts/OpenSans-Bold.ttf
+    - family: PlayfairDisplay
+      fonts:
+        - asset: fonts/PlayfairDisplay-Regular.ttf
+        - asset: fonts/PlayfairDisplay-Bold.ttf
+        - asset: fonts/PlayfairDisplay-Italic.ttf
